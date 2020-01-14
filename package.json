@@ -1,0 +1,22 @@
+{
+  "name": "coming-soon-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for a online store soon to launch",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlbakke/coming-soon-landing-page.git"
+  },
+  "author": "Martin Liland Bakke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlbakke/coming-soon-landing-page/issues"
+  },
+  "homepage": "https://github.com/mlbakke/coming-soon-landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
