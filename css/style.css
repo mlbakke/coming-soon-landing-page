@@ -3,9 +3,36 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem; }
+  font-size: 2rem;
+  font-family: 'Source Code Pro', monospace;
+  color: #0a1412; }
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  line-height: 10rem;
+  letter-spacing: 2rem; }
+  .header--1 {
+    display: block; }
+  .header--2 {
+    display: block; }
+
+.infobox__text {
+  text-align: center;
+  line-height: 2.5rem; }
+  .infobox__text--captivate {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    text-transform: uppercase; }
 
 .infobox {
+  background-color: #f2fefb;
   width: 65%;
   position: relative;
   display: flex;
@@ -19,3 +46,13 @@ body {
     margin: 0 15rem; }
   .infobox__hero {
     max-width: 40%; }
+  .infobox__text {
+    margin-bottom: 4rem; }
+  .infobox__email-form {
+    text-align: center; }
+    .infobox__email-form--input {
+      padding: .4rem 1rem; }
+
+body {
+  overflow: hidden;
+  background-image: linear-gradient(to top right, rgba(26, 131, 99, 0.1), rgba(122, 253, 214, 0.1)); }
