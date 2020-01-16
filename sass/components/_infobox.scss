@@ -1,4 +1,5 @@
 .infobox {
+    background-color: $color-light;
     width: 65%;
     position: relative;
     display: flex;
@@ -24,5 +25,17 @@
     //picture of fashion model
     &__hero {
         max-width: 40%;
+    }
+    
+    &__text {
+        margin-bottom: 4rem; //for space before the email form
+    }
+
+    &__email-form {
+        text-align: center;
+
+        &--input {
+            padding: .4rem 1rem;
+        }
     }
 }
