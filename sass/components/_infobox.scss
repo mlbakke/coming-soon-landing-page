@@ -39,10 +39,38 @@
     }
 
     &__email-form {
-        text-align: center;
+        position: relative;
 
         &--input {
-            padding: .4rem 1rem;
+            width: 100%;
+            padding: .8rem 0;
+            font-size: 1.6rem;
+            font-family: 'Source Code Pro', monospace;
+            background: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $color-dark;
+            transition: .6s;
+
+            &:focus {
+                //change bottom border color to indicate focus
+                border-bottom: 1px solid $color-primary-dark;
+            }
+
+            &:focus ~ label {
+                top: -2.2rem;   //move label up when focused
+            }
+        }
+
+        &--label {
+            // place label on top of input field
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            padding: .8rem 0;
+            transition: .6s;
         }
     }
 }

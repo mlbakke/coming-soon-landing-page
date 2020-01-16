@@ -57,9 +57,29 @@ body {
   .infobox__text {
     margin-bottom: 4rem; }
   .infobox__email-form {
-    text-align: center; }
+    position: relative; }
     .infobox__email-form--input {
-      padding: .4rem 1rem; }
+      width: 100%;
+      padding: .8rem 0;
+      font-size: 1.6rem;
+      font-family: 'Source Code Pro', monospace;
+      background: transparent;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #0a1412;
+      transition: .6s; }
+      .infobox__email-form--input:focus {
+        border-bottom: 1px solid #1a8363; }
+      .infobox__email-form--input:focus ~ label {
+        top: -2.2rem; }
+    .infobox__email-form--label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      padding: .8rem 0;
+      transition: .6s; }
 
 body {
   overflow: hidden;
