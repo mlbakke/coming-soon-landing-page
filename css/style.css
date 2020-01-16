@@ -12,7 +12,7 @@ body {
   font-size: 6rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 20%;
   margin-bottom: 2.5rem;
   line-height: 9rem;
   letter-spacing: 2rem; }
@@ -47,6 +47,11 @@ body {
     flex: 1 auto;
     width: 55%;
     margin: 0 15rem; }
+  .infobox__logo {
+    position: absolute;
+    width: 12rem;
+    left: 3rem;
+    top: -1rem; }
   .infobox__hero {
     max-width: 40%; }
   .infobox__text {
@@ -58,4 +63,4 @@ body {
 
 body {
   overflow: hidden;
-  background-image: linear-gradient(to top right, rgba(26, 131, 99, 0.1), rgba(122, 253, 214, 0.1)); }
+  background-image: linear-gradient(to top right, rgba(122, 253, 214, 0.2), rgba(199, 253, 238, 0.2)), url(../../images/water-bw.jpg); }
