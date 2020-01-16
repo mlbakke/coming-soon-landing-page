@@ -1,7 +1,9 @@
 body {
     overflow: hidden;
-    background-image: linear-gradient(
-        to top right, 
-        rgba($color-primary-dark, .1), 
-        rgba($color-primary, .1));
+    background-image: 
+        linear-gradient(
+            to top right, 
+            rgba($color-primary, .2), 
+            rgba($color-primary-light, .2)),
+        url(../../images/water-bw.jpg);
 }
