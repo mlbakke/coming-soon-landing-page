@@ -1,3 +1,37 @@
 body {
-    font-size: 1.6rem; //16px
+    font-size: 2rem; //20px
+    font-family: 'Source Code Pro', monospace;
+    color: $color-dark;
+}
+
+.header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 7rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    line-height: 10rem;
+    letter-spacing: 2rem;
+
+    &--1 {
+        display: block;
+    }
+
+    &--2 {
+        display: block;
+    }
+}
+
+.infobox__text {
+    text-align: center;
+    line-height: 2.5rem;
+
+    &--captivate {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5rem;  //5px bigger than bulk of text
+        line-height: 4rem;  //to seperate from rest of text
+        font-weight: 600;
+        text-transform: uppercase;
+    }
 }
