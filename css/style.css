@@ -7,7 +7,7 @@ body {
   font-family: 'Source Code Pro', monospace;
   color: #0a1412; }
 
-.header {
+.heading {
   font-family: 'Raleway', sans-serif;
   font-size: 6rem;
   text-transform: uppercase;
@@ -16,12 +16,12 @@ body {
   margin-bottom: 2.5rem;
   line-height: 9rem;
   letter-spacing: 2rem; }
-  .header--1 {
+  .heading--1 {
     display: block; }
-  .header--2 {
+  .heading--2 {
     display: block;
     color: #1a8363; }
-  .header--3 {
+  .heading--3 {
     display: block; }
 
 .infobox__text {
