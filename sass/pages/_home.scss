@@ -1,0 +1,7 @@
+body {
+    overflow: hidden;
+    background-image: linear-gradient(
+        to top right, 
+        rgba($color-primary-dark, .1), 
+        rgba($color-primary, .1));
+}
