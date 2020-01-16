@@ -6,12 +6,12 @@ body {
 
 .header {
     font-family: 'Raleway', sans-serif;
-    font-size: 7rem;
+    font-size: 6rem;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 8rem;
-    margin-bottom: 4rem;
-    line-height: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    line-height: 9rem;
     letter-spacing: 2rem;
 
     &--1 {
@@ -19,6 +19,11 @@ body {
     }
 
     &--2 {
+        display: block;
+        color: $color-primary-dark;
+    }
+
+    &--3 {
         display: block;
     }
 }
