@@ -3,6 +3,7 @@
     width: 65%;
     position: relative;
     display: flex;
+    box-sizing: border-box;
     //center horizontally
     margin: auto;
     //center-ish vertically
@@ -37,4 +38,43 @@
     &__text {
         margin-bottom: 4rem; //for space before the email form
     }
+
+    @media only screen and (max-width: 1400px) {
+        margin-left: calc(35% / 2.5);
+    }
+
+    @media only screen and (max-width: 1300px) {
+        margin-left: calc(35% / 3);
+    }
+
+    @media only screen and (max-width: 1050px) {
+        //remove attributes and fix centering
+        transform: translateY(0);
+        margin: 0 auto;
+        padding: 10%;
+        //remove shadow
+        box-shadow: none;
+        //fix size
+        display: inline-block;
+        height: 100vh;
+        width: 100%;
+        
+        background-color: transparent;
+
+        border: 2px solid red;
+
+        &__left{
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: 2rem;
+        &__left {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+        
 }
