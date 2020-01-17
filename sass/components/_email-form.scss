@@ -1,0 +1,59 @@
+.email-form {
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+
+    &__input {
+        width: 65%;
+        padding: .8rem 0;
+        margin-bottom: 1rem;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $color-dark;
+        //inherit font properties
+        font-family: inherit;
+        font-size: inherit;
+        letter-spacing: inherit;
+        //for changes when focused
+        transition: .6s;
+
+        &:focus {
+            //change bottom border color to indicate focus
+            border-bottom: 1px solid $color-primary-dark;
+        }
+
+        &:focus ~ label {
+            top: -2.2rem;   //move label up when focused
+        }
+    }
+
+    &__label {
+        // place label on top of input field
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-transform: capitalize;
+        padding: .8rem 0;
+        transition: .6s;
+    }
+
+    &__submit {
+        //inherit font properties
+        font-family: inherit;
+        font-size: inherit;
+        letter-spacing: inherit;
+        color: $color-light;
+        background: $color-primary-dark;
+        border: none;
+        outline: none;
+        padding: 1rem 2rem;
+        border-radius: .7rem;
+        cursor: pointer;
+
+        //place 3rem to the left of email input
+        position: absolute;
+        left: calc(65% + 3rem)
+    }
+}
