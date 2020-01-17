@@ -26,6 +26,27 @@ body {
     &--3 {
         display: block;
     }
+
+    @media only screen and (max-width: 1650px) {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+    @media only screen and (max-width: 1350px) {
+        &--1 {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 1200px) {
+        font-size: 4rem;
+        line-height: 6rem;
+        margin-bottom: 1.5rem;
+    }
+    @media only screen and (max-width: 1050px) {
+        margin-top: 0;
+        &--1 {
+            display: block;
+        }
+    }
 }
 
 .infobox__text {
@@ -39,5 +60,26 @@ body {
         letter-spacing: .2rem;
         font-weight: 600;
         text-transform: uppercase;
+    }
+
+    @media only screen and (max-width: 1550px) {
+        font-size: 1.6rem;
+        line-height: 2rem;
+
+        &--captivate {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        &--captivate {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 1050px) {
+        &--captivate {
+            display: block;
+        }
     }
 }
