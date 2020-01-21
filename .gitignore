@@ -3,3 +3,7 @@
 node_modules/
 
 images/*.txt
+
+css/reset*
+css/style.co*
+css/style.pre*
