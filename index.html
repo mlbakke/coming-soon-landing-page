@@ -38,7 +38,16 @@
                 </form>
             </div>
             
-            <img src="images/red-hat-factory-1750.jpg" alt="Clothing model in shirt" class="infobox__hero">
+            <div class="infobox__hero">
+                <picture>
+                    <source media="(min-width: 1901px)" srcset="images/red-hat-factory-960.jpg">
+                    <source media="(max-width: 1900px)" srcset="images/red-hat-factory-640.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/red-hat-factory-360.jpg">
+                    <source media="(max-width: 900px)" srcset="images/red-hat-factory-wide-750.jpg">
+                    <source media="(max-width: 750px)" srcset="images/red-hat-factory-wide-600.jpg">
+                    <img src="images/red-hat-factory-480.jpg" alt="Clothing model in shirt and hat" class="infobox__hero--img">
+                </picture>
+            </div>
         </section>
     </main>
 
