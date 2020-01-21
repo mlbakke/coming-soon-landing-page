@@ -3,7 +3,9 @@
     width: 65%;
     position: relative;
     display: flex;
+    flex-direction: row-reverse;
     align-items: stretch;
+    justify-content: space-between;
     box-sizing: border-box;
     //center horizontally
     margin: auto;
@@ -21,7 +23,7 @@
     &__left{
         width: 55%;
         margin: 0 15rem;
-        margin-top: 10vh;
+        margin-top: 7vh;
         box-sizing: border-box;
     }
 
@@ -34,7 +36,7 @@
 
     //picture of fashion model
     &__hero {
-        width: 60%;
+        width: 50%;
         min-width: 30rem;
 
         &--img{
@@ -49,31 +51,28 @@
     }
 
     @media only screen and (max-width: 1400px) {
-        
+        width: 75%;
+
         &__left {
             margin-top: 6rem;
         }
     }
 
     @media only screen and (max-width: 1300px) {
-        margin-left: calc(35% / 2.5);
-
+        &__left {
+            margin-right: 15%;
+            padding-top: 1rem;
+        }
         &__text {
-            margin: 2rem 0;
+            margin: 1.5rem 0 2.5rem;
         }
     }
 
-    @media only screen and (max-width: 1300px) {
-        &__text {
-            margin: 1rem 0 2.5rem;
-        }
-    }
-
-    @media only screen and (max-width: 1050px) {
+    @media only screen and (max-width: 900px) {
         //remove attributes and fix centering
         transform: translateY(0);
         margin: 0 auto;
-        padding: 10%;
+        padding: 5%;
         //remove shadow
         box-shadow: none;
         //fix size
@@ -86,19 +85,20 @@
         &__left{
             width: 100%;
             margin: 0;
+            padding: 5%;
         }
 
         &__hero {
             width: 100%;
+            margin-top: 5rem;
+            
+            &--img{
+                //max-height to avoid unnecessary scrolling
+                max-height: 35rem;
+                //place image from top center
+                object-position: 50% 0%;
+            }
         }
     }
 
-    @media only screen and (max-width: 600px) {
-        padding: 2rem;
-        &__left {
-            width: 100%;
-            margin: 0 auto;
-        }
-    }
-        
 }
