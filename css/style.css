@@ -21,7 +21,7 @@ body {
     color: #1a8363; }
   .heading--3 {
     display: block; }
-  @media only screen and (max-width: 1650px) {
+  @media only screen and (max-width: 1800px) {
     .heading {
       font-size: 4rem;
       line-height: 6rem; } }
@@ -32,7 +32,7 @@ body {
     .heading {
       font-size: 3rem;
       line-height: 5rem; } }
-  @media only screen and (max-width: 1050px) {
+  @media only screen and (max-width: 900px) {
     .heading--1 {
       display: block; } }
 
@@ -56,7 +56,7 @@ body {
   @media only screen and (max-width: 1200px) {
     .infobox__text--captivate {
       display: none; } }
-  @media only screen and (max-width: 1050px) {
+  @media only screen and (max-width: 900px) {
     .infobox__text--captivate {
       display: block; } }
 
@@ -102,10 +102,18 @@ body {
     position: absolute;
     left: calc(65% + 3rem); }
   @media only screen and (max-width: 1300px) {
-    .email-form__input:focus ~ label {
-      top: -2rem; }
+    .email-form__input {
+      width: 60%; }
+      .email-form__input:focus ~ label {
+        top: -2rem; }
     .email-form__submit {
-      left: calc(55% + 2.5rem);
+      left: calc(60% + 2rem);
+      padding: .8rem 1.6rem; } }
+  @media only screen and (max-width: 900px) {
+    .email-form__input {
+      width: 55%; }
+    .email-form__submit {
+      left: calc(55% + 3rem);
       padding: .8rem 1.6rem; } }
 
 .infobox {
@@ -113,7 +121,9 @@ body {
   width: 65%;
   position: relative;
   display: flex;
+  flex-direction: row-reverse;
   align-items: stretch;
+  justify-content: space-between;
   box-sizing: border-box;
   margin: auto;
   margin-top: 50vh;
@@ -122,7 +132,7 @@ body {
   .infobox__left {
     width: 55%;
     margin: 0 15rem;
-    margin-top: 10vh;
+    margin-top: 7vh;
     box-sizing: border-box; }
   .infobox__logo {
     position: absolute;
@@ -130,7 +140,7 @@ body {
     left: 3rem;
     top: -1rem; }
   .infobox__hero {
-    width: 60%;
+    width: 50%;
     min-width: 30rem; }
     .infobox__hero--img {
       width: 100%;
@@ -139,21 +149,21 @@ body {
   .infobox__text {
     margin: 4rem 0; }
   @media only screen and (max-width: 1400px) {
-    .infobox__left {
-      margin-top: 6rem; } }
-  @media only screen and (max-width: 1300px) {
     .infobox {
-      margin-left: calc(35% / 2.5); }
-      .infobox__text {
-        margin: 2rem 0; } }
+      width: 75%; }
+      .infobox__left {
+        margin-top: 6rem; } }
   @media only screen and (max-width: 1300px) {
+    .infobox__left {
+      margin-right: 15%;
+      padding-top: 1rem; }
     .infobox__text {
-      margin: 1rem 0 2.5rem; } }
-  @media only screen and (max-width: 1050px) {
+      margin: 1.5rem 0 2.5rem; } }
+  @media only screen and (max-width: 900px) {
     .infobox {
       transform: translateY(0);
       margin: 0 auto;
-      padding: 10%;
+      padding: 5%;
       box-shadow: none;
       display: inline-block;
       height: 100vh;
@@ -161,16 +171,18 @@ body {
       background-color: transparent; }
       .infobox__left {
         width: 100%;
-        margin: 0; }
+        margin: 0;
+        padding: 5%; }
       .infobox__hero {
-        width: 100%; } }
-  @media only screen and (max-width: 600px) {
-    .infobox {
-      padding: 2rem; }
-      .infobox__left {
         width: 100%;
-        margin: 0 auto; } }
+        margin-top: 5rem; }
+        .infobox__hero--img {
+          max-height: 35rem;
+          object-position: 50% 0%; } }
 
 body {
   overflow: hidden;
   background-image: linear-gradient(to top right, rgba(122, 253, 214, 0.2), rgba(199, 253, 238, 0.2)), url(../../images/water-bw.jpg); }
+  @media only screen and (max-width: 900px) {
+    body {
+      overflow: auto; } }
