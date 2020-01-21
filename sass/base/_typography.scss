@@ -9,8 +9,6 @@ body {
     font-size: 6rem;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 19%;
-    margin-bottom: 3rem;
     line-height: 8rem;
     letter-spacing: 2rem;
 
@@ -28,8 +26,8 @@ body {
     }
 
     @media only screen and (max-width: 1650px) {
-        font-size: 5rem;
-        line-height: 7rem;
+        font-size: 4rem;
+        line-height: 6rem;
     }
     @media only screen and (max-width: 1350px) {
         &--1 {
@@ -37,12 +35,10 @@ body {
         }
     }
     @media only screen and (max-width: 1200px) {
-        font-size: 4rem;
-        line-height: 6rem;
-        margin-bottom: 1.5rem;
+        font-size: 3rem;
+        line-height: 5rem;
     }
     @media only screen and (max-width: 1050px) {
-        margin-top: 0;
         &--1 {
             display: block;
         }
@@ -62,7 +58,7 @@ body {
         text-transform: uppercase;
     }
 
-    @media only screen and (max-width: 1550px) {
+    @media only screen and (max-width: 1650px) {
         font-size: 1.6rem;
         line-height: 2rem;
 
