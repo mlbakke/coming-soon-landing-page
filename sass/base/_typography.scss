@@ -25,7 +25,7 @@ body {
         display: block;
     }
 
-    @media only screen and (max-width: 1650px) {
+    @media only screen and (max-width: 1800px) {
         font-size: 4rem;
         line-height: 6rem;
     }
@@ -38,7 +38,7 @@ body {
         font-size: 3rem;
         line-height: 5rem;
     }
-    @media only screen and (max-width: 1050px) {
+    @media only screen and (max-width: 900px) {
         &--1 {
             display: block;
         }
@@ -73,7 +73,7 @@ body {
             display: none;
         }
     }
-    @media only screen and (max-width: 1050px) {
+    @media only screen and (max-width: 900px) {
         &--captivate {
             display: block;
         }
