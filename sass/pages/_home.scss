@@ -6,4 +6,8 @@ body {
             rgba($color-primary, .2), 
             rgba($color-primary-light, .2)),
         url(../../images/water-bw.jpg);
+
+    @media only screen and (max-width: 900px) {
+        overflow: auto;
+    }
 }
