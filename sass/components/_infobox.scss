@@ -50,9 +50,11 @@
         margin: 4rem 0; //for space over and below
     }
 
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 1550px) {
         width: 75%;
+    }
 
+    @media only screen and (max-width: 1400px) {
         &__left {
             margin-top: 6rem;
         }
