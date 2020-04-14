@@ -1,1 +1,191 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;box-sizing:inherit}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;box-sizing:border-box}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a,a:link,a:visited{text-decoration:none}html{font-size:62.5%}body{font-size:2rem;font-family:'Source Code Pro', monospace;color:#0a1412}.heading{font-family:'Raleway', sans-serif;font-size:6rem;text-transform:uppercase;text-align:center;line-height:8rem;letter-spacing:2rem}.heading--1{display:block}.heading--2{display:block;color:#1a8363}.heading--3{display:block}@media only screen and (max-width: 1800px){.heading{font-size:4rem;line-height:6rem}}@media only screen and (max-width: 1350px){.heading--1{display:none}}@media only screen and (max-width: 1200px){.heading{font-size:3rem;line-height:5rem}}@media only screen and (max-width: 900px){.heading--1{display:block}}.infobox__text{text-align:center;line-height:2.5rem}.infobox__text--captivate{font-family:'Raleway', sans-serif;font-size:2.5rem;line-height:4rem;letter-spacing:.2rem;font-weight:600;text-transform:uppercase}@media only screen and (max-width: 1650px){.infobox__text{font-size:1.6rem;line-height:2rem}.infobox__text--captivate{font-size:2rem;line-height:3rem}}@media only screen and (max-width: 1200px){.infobox__text--captivate{display:none}}@media only screen and (max-width: 900px){.infobox__text--captivate{display:block}}.email-form{position:relative;font-family:'Source Code Pro', monospace;font-size:1.6rem;letter-spacing:1px}.email-form__input{width:65%;padding:.8rem 0;margin-bottom:1rem;background:transparent;outline:none;border:none;border-bottom:1px solid #0a1412;font-family:inherit;font-size:inherit;letter-spacing:inherit;-webkit-transition:.6s;transition:.6s}.email-form__input:focus{border-bottom:1px solid #1a8363}.email-form__input:focus ~ label{top:-2.2rem}.email-form__label{position:absolute;top:0;left:0;text-transform:capitalize;padding:.8rem 0;-webkit-transition:.6s;transition:.6s}.email-form__submit{font-family:inherit;font-size:inherit;letter-spacing:inherit;color:#f2fefb;background:#1a8363;border:none;outline:none;padding:1rem 2rem;border-radius:.7rem;cursor:pointer;position:absolute;left:calc(65% + 3rem)}@media only screen and (max-width: 1300px){.email-form__input{width:60%}.email-form__input:focus ~ label{top:-2rem}.email-form__submit{left:calc(60% + 2rem);padding:.8rem 1.6rem}}@media only screen and (max-width: 900px){.email-form__input{width:55%}.email-form__submit{left:calc(55% + 3rem);padding:.8rem 1.6rem}}.infobox{background-color:#f2fefb;width:65%;position:relative;display:-webkit-box;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;flex-direction:row-reverse;-webkit-box-align:stretch;align-items:stretch;-webkit-box-pack:justify;justify-content:space-between;box-sizing:border-box;margin:auto;margin-top:50vh;-webkit-transform:translateY(-50%);transform:translateY(-50%);box-shadow:0 1px 1px rgba(10,20,18,0.1),0 2px 2px rgba(10,20,18,0.1),0 4px 4px rgba(10,20,18,0.1),0 8px 8px rgba(10,20,18,0.1)}.infobox__left{width:55%;margin:0 15rem;margin-top:7vh;box-sizing:border-box}.infobox__logo{position:absolute;width:12rem;left:3rem;top:-1rem}.infobox__hero{width:50%;min-width:30rem}.infobox__hero--img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.infobox__text{margin:4rem 0}@media only screen and (max-width: 1400px){.infobox{width:75%}.infobox__left{margin-top:6rem}}@media only screen and (max-width: 1300px){.infobox__left{margin-right:15%;padding-top:1rem}.infobox__text{margin:1.5rem 0 2.5rem}}@media only screen and (max-width: 900px){.infobox{-webkit-transform:translateY(0);transform:translateY(0);margin:0 auto;padding:5%;box-shadow:none;display:inline-block;height:100vh;width:100%;background-color:transparent}.infobox__left{width:100%;margin:0;padding:5%}.infobox__logo{top:-2.2rem}.infobox__hero{width:100%;margin-top:5rem}.infobox__hero--img{max-height:35rem;-o-object-position:50% 0%;object-position:50% 0%}}body{overflow:hidden;background-image:-webkit-gradient(linear, left bottom, right top, from(rgba(122,253,214,0.2)), to(rgba(199,253,238,0.2))),url(../../images/water-bw.jpg);background-image:linear-gradient(to top right, rgba(122,253,214,0.2), rgba(199,253,238,0.2)),url(../../images/water-bw.jpg)}@media only screen and (max-width: 900px){body{overflow:auto}}
+html {
+  /*1rem = 10px*/
+  font-size: 62.5%; }
+
+body {
+  font-size: 2rem;
+  font-family: 'Source Code Pro', monospace;
+  color: #0a1412; }
+
+.heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 8rem;
+  letter-spacing: 2rem; }
+  .heading--1 {
+    display: block; }
+  .heading--2 {
+    display: block;
+    color: #1a8363; }
+  .heading--3 {
+    display: block; }
+  @media only screen and (max-width: 1800px) {
+    .heading {
+      font-size: 4rem;
+      line-height: 6rem; } }
+  @media only screen and (max-width: 1350px) {
+    .heading--1 {
+      display: none; } }
+  @media only screen and (max-width: 1200px) {
+    .heading {
+      font-size: 3rem;
+      line-height: 5rem; } }
+  @media only screen and (max-width: 900px) {
+    .heading--1 {
+      display: block; } }
+
+.infobox__text {
+  text-align: center;
+  line-height: 2.5rem; }
+  .infobox__text--captivate {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    text-transform: uppercase; }
+  @media only screen and (max-width: 1650px) {
+    .infobox__text {
+      font-size: 1.6rem;
+      line-height: 2rem; }
+      .infobox__text--captivate {
+        font-size: 2rem;
+        line-height: 3rem; } }
+  @media only screen and (max-width: 1200px) {
+    .infobox__text--captivate {
+      display: none; } }
+  @media only screen and (max-width: 900px) {
+    .infobox__text--captivate {
+      display: block; } }
+
+.email-form {
+  position: relative;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.6rem;
+  letter-spacing: 1px; }
+  .email-form__input {
+    width: 65%;
+    padding: .8rem 0;
+    margin-bottom: 1rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #0a1412;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    transition: .6s; }
+    .email-form__input:focus {
+      border-bottom: 1px solid #1a8363; }
+    .email-form__input:focus ~ label {
+      top: -2.2rem; }
+  .email-form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: capitalize;
+    padding: .8rem 0;
+    transition: .6s; }
+  .email-form__submit {
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    color: #f2fefb;
+    background: #1a8363;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: .7rem;
+    cursor: pointer;
+    position: absolute;
+    left: calc(65% + 3rem); }
+  @media only screen and (max-width: 1300px) {
+    .email-form__input {
+      width: 60%; }
+      .email-form__input:focus ~ label {
+        top: -2rem; }
+    .email-form__submit {
+      left: calc(60% + 2rem);
+      padding: .8rem 1.6rem; } }
+  @media only screen and (max-width: 900px) {
+    .email-form__input {
+      width: 55%; }
+    .email-form__submit {
+      left: calc(55% + 3rem);
+      padding: .8rem 1.6rem; } }
+
+.infobox {
+  background-color: #f2fefb;
+  width: 65%;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  box-shadow: 0 1px 1px rgba(10, 20, 18, 0.1), 0 2px 2px rgba(10, 20, 18, 0.1), 0 4px 4px rgba(10, 20, 18, 0.1), 0 8px 8px rgba(10, 20, 18, 0.1); }
+  .infobox__left {
+    width: 55%;
+    margin: 0 15rem;
+    margin-top: 7vh;
+    box-sizing: border-box; }
+  .infobox__logo {
+    position: absolute;
+    width: 12rem;
+    left: 3rem;
+    top: -1rem; }
+  .infobox__hero {
+    width: 50%;
+    min-width: 30rem; }
+    .infobox__hero--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .infobox__text {
+    margin: 4rem 0; }
+  @media only screen and (max-width: 1550px) {
+    .infobox {
+      width: 75%; } }
+  @media only screen and (max-width: 1400px) {
+    .infobox__left {
+      margin-top: 6rem; } }
+  @media only screen and (max-width: 1300px) {
+    .infobox__left {
+      margin-right: 15%;
+      padding-top: 1rem; }
+    .infobox__text {
+      margin: 1.5rem 0 2.5rem; } }
+  @media only screen and (max-width: 900px) {
+    .infobox {
+      transform: translateY(0);
+      margin: 0 auto;
+      padding: 5%;
+      box-shadow: none;
+      display: inline-block;
+      height: 100vh;
+      width: 100%;
+      background-color: transparent; }
+      .infobox__left {
+        width: 100%;
+        margin: 0;
+        padding: 5%; }
+      .infobox__logo {
+        top: -2.2rem; }
+      .infobox__hero {
+        width: 100%;
+        margin-top: 5rem; }
+        .infobox__hero--img {
+          max-height: 35rem;
+          object-position: 50% 0%; } }
+
+body {
+  overflow: hidden;
+  background-image: linear-gradient(to top right, rgba(122, 253, 214, 0.2), rgba(199, 253, 238, 0.2)), url(../../images/water-bw.jpg); }
+  @media only screen and (max-width: 900px) {
+    body {
+      overflow: auto; } }
