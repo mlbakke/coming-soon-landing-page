@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/reset.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css",
@@ -22,7 +21,7 @@
   },
   "homepage": "https://github.com/mlbakke/coming-soon-landing-page#readme",
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.7.6",
     "concat": "^1.0.3",
     "node-sass": "^4.13.1",
     "postcss-cli": "^7.1.0"
